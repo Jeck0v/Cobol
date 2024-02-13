@@ -1,8 +1,8 @@
        IDENTIFICATION DIVISION.
        program-id. HelloW.
-       AUTHOR. Jecko.
+       AUTHOR. Jeck0v.
        procedure division.
-           DISPLAY "Bienvenue cher Coboliste".
+           DISPLAY "HelloWorld".
  
       *Ceci est un commentaire
       *     
