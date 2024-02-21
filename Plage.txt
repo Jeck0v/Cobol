@@ -12,4 +12,4 @@ Ensuite nous descendons d’un niveau dans la hiérarchie, donc l’étiquette e
 BLANK SCREEN permet d’effacer ce qui est affiché à l’écran.
 ========
 LINE en anglais veut dire ligne, cela signifie donc qu’on se positionne à la ligne 3, et COL pour colonne. Donc on commencera à afficher notre texte à la ligne 3, colonne 15.
-
+(PS: Selon votre compilateur, le mot COL peut-être interprété comme étant une erreur. Dans ce cas remplacer COL par COLUM)
