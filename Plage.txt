@@ -1,0 +1,15 @@
+Les plages permettent de gérer les entrées et sorties de l’ordinateur, l’entrée étant le clavier et la sortie étant l’affichage à l’écran. 
+On va pouvoir observer 2 types de plage pour l’instant, les plages dîtes d’affichage, et celles de saisie:
+============================
+SCREEN SECTION.
+ 1 a-plg-titre.
+  2 BLANK SCREEN.
+  2 LINE 3 COL 15 VALUE 'Hello world !'.
+===========================
+La gestion des entrées/sorties se fait dans SCREEN SECTION
+Ce qui suit le 1, soit "a-plg-titre" est le nom qui sera utilisé pour appeler l'affichage et ici nous sommes à la racine de la hiérarchie, donc l’étiquette logique sera 1
+Ensuite nous descendons d’un niveau dans la hiérarchie, donc l’étiquette est 2 (on avait besoin de descendre plus bas, ça serait 3, puis 4, puis 5, etc...)
+BLANK SCREEN permet d’effacer ce qui est affiché à l’écran.
+========
+LINE en anglais veut dire ligne, cela signifie donc qu’on se positionne à la ligne 3, et COL pour colonne. Donc on commencera à afficher notre texte à la ligne 3, colonne 15.
+
