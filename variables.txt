@@ -1,0 +1,22 @@
+Prenons l'exemple de WORKING-STORAGE-SECTION
+==================================
+WORKING-STORAGE-SECTION
+  77 variable PIC 9.
+==================================
+L'éiquette 77 est une convention pour le nommage de variable en Cobol
+"variable" est le nom de la variable, on aurais pu très bien lui mettre un autre nom (il ne peut être composé que de caractère alphanumérique)
+PIC 9 désigne la forme qu'aura la variable, le 9 désigne le type de donnée stocké soit les chiffres entier de 0 à 9
+Si l'ont veut que la forme contienne des donné à virgule on l'annoncera avec un v soit: 999v99
+===================================
+Déclaration des types de variables:
+===================================
+9 = nombre à 1 chiffre
+9(5) = nombre à 5 chiffres
+a(10) = chaîne de 10 caractères alphabétiques
+x(25) = chaîne de 25 caractères alphanumériques
+9v9 = nombre à 1 chiffre et 1 décimale
+9(3)v9(2) = nombre à 3 chiffres et 2 décimales
+s9(3) = nombre à 3 chiffres signé (+) ou (-)
+( "S9(3)" est une variable numérique signée pouvant contenir jusqu'à trois chiffres, avec une plage de valeurs de -999 à 999)
+===================================
+
