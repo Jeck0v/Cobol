@@ -1,1 +1,24 @@
+Manipulation des variables:
+=============================
+IDENTIFICATION DIVISION.
+ PROGRAM-ID. Manipulation.
 
+ DATA DIVISION.
+ WORKING-STORAGE SECTION.
+ 77 a PIC 99.
+ 77 b PIC 99.
+ 77 c PIC 99.
+
+ SCREEN SECTION
+ pa-res.
+    2 BLANK SCREEN.
+    2 LINE 5 COL 10 'C vaut : '.
+    2 PIC 99 FROM c.
+
+ PROCEDURE DIVISION.
+
+ MOVE 37 TO c.    (Déplace la valeur 37 dans la variable c, c vaut donc 37)
+
+ DISPLAY pa-res.
+
+ STOP RUN.
