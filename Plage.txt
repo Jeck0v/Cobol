@@ -1,7 +1,7 @@
 Les plages permettent de gérer les entrées et sorties de l’ordinateur, l’entrée étant le clavier et la sortie étant l’affichage à l’écran. 
 On va pouvoir observer 2 types de plage pour l’instant, les plages dîtes d’affichage, et celles de saisie:
 ============================
-Plage d'affichage:
+    Plage d'affichage:
 ============================
 SCREEN SECTION.
  1 a-plg-titre.
@@ -18,7 +18,7 @@ LINE en anglais veut dire ligne, cela signifie donc qu’on se positionne à la 
 VALUE, qui signifie valeur, ce qui suit sera donc ce qui sera affiché dans la console. Il suffit donc d’écrire le texte entre des guillemets simples comme ceci : 'Hello
 world !' sans oublier notre point .
 ==========================
-Plage de saisie:
+      Plage de saisie:
 ==========================
  s-plg-nom.
     2 LINE 5 COL 8 VALUE 'Quel est votre nom : '.
@@ -32,5 +32,6 @@ a-plg-nom.
      2 LINE 10 COL 8 VALUE 'Salut'.
      2 COL 15 PIC x(25) FROM nom.
 =========================
-FROM permet de récupérer la valeur que contient la variable nom
+         FROM 
+permet de récupérer la valeur que contient la variable nom
 =========================
