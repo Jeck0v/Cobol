@@ -1,4 +1,4 @@
-Manipulation des variables:
+       Manipulation
 =============================
 IDENTIFICATION DIVISION.
  PROGRAM-ID. Manipulation.
@@ -17,8 +17,88 @@ IDENTIFICATION DIVISION.
 
  PROCEDURE DIVISION.
 
- MOVE 37 TO c.    (Déplace la valeur 37 dans la variable c, c vaut donc 37)
+ MOVE 37 TO c.    
+*(Déplace la valeur 37 dans la variable c, c vaut donc 37)
 
  DISPLAY pa-res.
 
  STOP RUN.
+================================
+            COMPUTE 
+permet d'effectuer des calculs sur une / plusieurs variables
+Exemple:
+================================
+IDENTIFICATION DIVISION.
+ PROGRAM-ID. Manipulation.
+
+ DATA DIVISION.
+ WORKING-STORAGE SECTION.
+ 77 a PIC 99.
+ 77 b PIC 99.
+ 77 c PIC 99.
+
+ SCREEN SECTION.
+
+ 1 pla-res.
+   2 BLANK SCREEN.
+   2 LINE 5 COL 10.
+   2 PIC 99 FROM a.
+   2 COL 12 ' + '.
+   2 PIC 99 FROM b.
+   2 COL 18 ' = '.
+   2 PIC 99 FROM c.
+
+ PROCEDURE DIVISION.
+ MOVE 5 TO a.
+ MOVE 15 TO b.
+ COMPUTE c = a + b.
+*Réalise l'addition e la valeur de la variable a et celle de la variable b, le résultat est en suite stocker dans la variable c
+ DISPLAY pla-res.
+*Affichage du résultat avec a + b = c soit 05 + 15 = 20
+ STOP RUN.
+==========================================
+avec COMPUTE le reste des opérations sont aussi possible c'est à dire + , - , * , / etc...
+==========================================
+ADD est spécifiquement utilisée pour les opérations d'addition. Elle prend deux opérandes (ou plus) et stocke le résultat dans une variable spécifiée.
+COMPUTE est plus général. En plus de l'addition, elle peut être utilisée pour effectuer d'autres opérations arithmétiques telles que la soustraction, la multiplication, la division, 
+et pour effectuer des calculs plus complexes impliquant des expressions arithmétiques.
+==========================================
+                 ADD 
+==========================================
+IDENTIFICATION DIVISION.
+
+ PROGRAM-ID. Manipulation.
+ DATA DIVISION.
+ WORKING-STORAGE SECTION.
+ 77 a PIC 99.
+
+ SCREEN SECTION.
+ 1 pla-res.
+    2 LINE a COL 10 'Valeur de x : '.
+     2 PIC 99 FROM x.
+ PROCEDURE DIVISION.
+
+ MOVE 5 TO x.
+ DISPLAY pla-res.
+ ADD 2 TO x.
+ DISPLAY pla-res.
+
+ STOP RUN.
+=======================================
+Résultat:
+Valeur de x : 5
+Valeur de x : 7
+(On ajoute 2 à la valeur actuelle de x soit 5 + 2, x vaut donc 7)
+======================================
+            INITIALIZE
+======================================
+ 
+
+
+
+
+
+
+
+
+
