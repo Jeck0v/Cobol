@@ -1,5 +1,5 @@
 ==================================
-Les Procédures en Cobol:
+     Les Procédures en Cobol:
 ==================================
 PROCEDURE DIVISION => Coeur du programme, on y inscrit les instructions du programme.
 =================
