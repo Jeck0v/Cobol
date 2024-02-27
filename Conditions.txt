@@ -13,3 +13,36 @@ DATA DIVISION.
 ===================
 le mot clef THRU : si on traduit la ligne 4 en français,
 cela signifie ”Si la valeur de note va de 10 à 11,99 passable vaut true, sinon faux"
+======================
+      IF ... ELSE
+==================================================
+IDENTIFICATION DIVISION.
+ PROGRAM-ID. conditions.
+ DATA DIVISION.
+
+ 77 val PIC 999.
+
+ SCREEN SECTION.
+ 01 pla-titre.
+    02 BLANK SCREEN.
+    02 LINE 2 COL 25 VALUE "Superieur ou inferieur".
+
+ 01 pla-sup.
+
+  02 LINE 6 COL 10 VALUE "La valeur de 'val' est superieur ou".
+   02 VALUE " egale a 100".
+
+ 01 pla-inf.
+
+   02 LINE 6 COL 10 VALUE "La valeur de 'val' est inferieur a 100".
+
+ PROCEDURE DIVISION.
+
+ MOVE 50 TO val.3 DISPLAY pla-titre.
+
+ * C'est dans ce bloc que l'on va placer nos conditions.
+
+ STOP RUN.
+=================================================
+(la syntaxe se rapproche des scripts Batch)
+
