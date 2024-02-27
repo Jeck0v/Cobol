@@ -1,0 +1,15 @@
+      Les Conditions:
+=============================
+=> contrôler l'exécution du programme en fonction de certaines conditions
+=> des comparaisons entre des variables, des valeurs numériques ou des chaînes de caractères
+===================
+DATA DIVISION.
+
+ 77 note PIC 99v99.
+ 88 passable VALUE 10 THRU 11.99.
+ 88 assez_bien VALUE 12 THRU 13.99.
+ 88 bien VALUE 14 THRU 16.
+ 88 parfait VALUE 20.
+===================
+le mot clef THRU : si on traduit la ligne 4 en français,
+cela signifie ”Si la valeur de note va de 10 à 11,99 passable vaut true, sinon faux"
