@@ -45,4 +45,36 @@ IDENTIFICATION DIVISION.
  STOP RUN.
 =================================================
 (la syntaxe se rapproche des scripts Batch)
+Ne JAMAIS mettre de . dans une condition sinon ERREUR
+==================================================
+evaluation.
+ IF val < 100 THEN
+    DISPLAY pla-inf
+ ELSE
+    DISPLAY pla-sup
+ END-IF.
+
+ * Du code... 
+
+ MOVE 150 TO val.
+* Et vous avez besoin de réutiliser le code de l'évaluation alors vous appe13 PERFORM evaluation.
+===================================================
+                  PARAGRAPHE
+===================================================
+=> dans PROCEDURE DIVISION, on déclare les paragraphes
+L’utilisation de paragraphe peut être utile pour répéter certaines portions de code sans avoir à
+les copier/coller (comme une sorte d’include en PHP).
+=======
+mon-paragraphe.
+    * instruction 1.
+    * instruction 2.
+    * instruction 3.
+    * etc
+======
+Ensuite pour appeler notre paragraphe il suffit de faire ceci :
+=========
+PERFORM mon-paragraphe.
+=========
+Un paragraphe se termine toujours par un point !
+=======================================================
 
