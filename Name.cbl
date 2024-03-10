@@ -10,3 +10,5 @@
 001000   DISPLAY 'Prénom: ' PERSON-FIRSTNAME.
 001100   DISPLAY 'Age: ' PERSON-AGE.
 001200   STOP RUN.
+
+//Voir cours pour comprendre bien tout
